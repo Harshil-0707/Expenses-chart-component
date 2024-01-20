@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="import" href="https://fonts.google.com/specimen/DM+Sans">
+  <link rel="stylesheet" href="style.css">
+  <title>Expenses chart component</title>
+</head>
+<body>
+  <div id="container">
+    <div id="head">
+      <div id="balance">
+        <div id="myBalance">My balance</div>
+        <div id="balance-amount">$921.48</div>
+      </div>
+      <div id="logo">
+        <img src="/images/logo.svg">
+      </div>
+    </div>
+    <div id="main-body">
+      <main>
+        <h2>Spending - Last 7 days</h2>
+        <div id="stats">
+          <div id="days">
+            <div id="spendingPerDay"></div>
+            <div id="mon" class="day"></div>
+            <div id="day-name">mon</div>
+          </div>
+          <div id="days">
+            <div id="spendingPerDay"></div>
+            <div id="tue" class="day"></div>
+            <div id="day-name">tue</div>
+          </div>
+          <div id="days">
+            <div id="spendingPerDay"></div>
+            <div id="wed" class="day"></div>
+            <div id="day-name">wed</div>
+          </div>
+          <div id="days">
+            <div id="spendingPerDay"></div>
+            <div id="thu" class="day"></div>
+            <div id="day-name">thu</div>
+          </div>
+          <div id="days">
+            <div id="spendingPerDay"></div>
+            <div id="fri" class="day"></div>
+            <div id="day-name">fri</div>
+          </div>
+          <div id="days">
+            <div id="spendingPerDay"></div>
+            <div id="sat" class="day"></div>
+            <div id="day-name">sat</div>
+          </div>
+          <div id="days">
+            <div id="spendingPerDay"></div>
+            <div id="sun" class="day"></div>
+            <div id="day-name">sun</div>
+          </div>
+        </div>
+      </main>
+      <div id="footer">
+        <div id="total">
+          <div id="thismonth">Total this month</div>
+          <div id="total-amount">$478.33</div>
+        </div>
+        <div id="about-lastmonth">
+          <div id="percent">+2.4%</div>
+          <div id="lastmonth">from last month</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

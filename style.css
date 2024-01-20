@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'DM Sans';
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(27, 66%, 92%);
+}
+
+#container{
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+#head{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(10, 79%, 65%);
+}
+
+#head #logo img{
+    width: 48px;
+}
+
+#balance{
+    color: #fff;
+    margin-right: auto;
+}
+
+#balance #myBalance{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+#balance #balance-amount{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#main-body{
+    display: flex;
+    padding: 28px;
+    border-radius: 14px;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+main{
+    margin-bottom: 20px;
+}
+
+main h2{
+    font-size: 22px;
+    color: hsl(25, 47%, 15%);
+}
+
+#stats{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    margin: 40px 0 5px 0;
+    align-items: baseline;
+}
+
+#spendingPerDay{
+    opacity: 0;
+    width: 58px;
+    color: #fff;
+    height: 28px;
+    margin: 0 0  10px -5px;
+    background-color:hsl(25, 47%, 15%);
+}
+
+.day{
+    width: 42px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    background-color: hsl(10, 79%, 65%);
+}
+
+.day:hover{
+    cursor: pointer;
+    background-color: #FF9B87;
+}
+
+#days .day:hover > #spendingPerDay{
+    opacity: 1;
+}
+
+#days:nth-child(even){
+    margin: 0 8px;
+}
+
+#mon{height: 3.5rem;}
+
+#tue{height: 8rem;}
+
+#wed{
+    height: 12rem;
+    background-color: hsl(186, 34%, 60%);
+}
+
+#wed:hover{background-color: #b4dfe5;}
+
+#thu{height: 6.5rem;}
+
+#fri{height: 4.5rem;}
+
+#sat{height: 9rem;}
+
+#sun{height: 5rem;}
+
+#day-name{
+    font-size: 14px;
+    margin: 10px 0 0 10px;
+    color: hsl(28, 10%, 53%);
+}
+
+#footer{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid hsl(27, 66%, 92%);
+}
+
+#thismonth,
+#lastmonth{
+    font-size: 13px;
+    color: hsl(28, 10%, 53%);
+}
+
+#total-amount{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+#about-lastmonth{
+    margin-top: 10px;
+}
+
+#percent{
+    text-align: end;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width:376px){
+    #container{
+        width: 90%;
+    }
+    #main-body{
+        padding: 20px 18px;
+    }
+    .day{
+        width: 35px;
+    }
+    main h2{
+        font-size: 24px;
+    }
+    #day-name{
+        width: 35px;
+        font-size: 12px;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+    #spendingPerDay{
+        width: 40px;
+        height: 24px;
+        margin: 0 0 10px -3px;
+    }
+}
