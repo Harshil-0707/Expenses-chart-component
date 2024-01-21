@@ -35,8 +35,8 @@ body{
 }
 
 #balance{
-    color: #fff;
     margin-right: auto;
+    color: hsl(33, 100%, 98%);
 }
 
 #balance #myBalance{
@@ -54,7 +54,7 @@ body{
     padding: 28px;
     border-radius: 14px;
     flex-direction: column;
-    background-color: #fff;
+    background-color: hsl(33, 100%, 98%);
 }
 
 main{
@@ -68,18 +68,18 @@ main h2{
 
 #stats{
     display: flex;
-    position: relative;
-    margin-bottom: 20px;
-    margin: 40px 0 5px 0;
-    align-items: baseline;
+    align-items: end;
+    margin: 60px 0 10px 0;
 }
 
 #spendingPerDay{
-    opacity: 0;
-    width: 58px;
-    color: #fff;
-    height: 28px;
-    margin: 0 0  10px -5px;
+    width: 122%;
+    display: none;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    margin: -36px 0 10px -5px;
+    color: hsl(33, 100%, 98%);
     background-color:hsl(25, 47%, 15%);
 }
 
@@ -97,7 +97,7 @@ main h2{
 }
 
 #days .day:hover > #spendingPerDay{
-    opacity: 1;
+    display: block;
 }
 
 #days:nth-child(even){
@@ -125,7 +125,8 @@ main h2{
 
 #day-name{
     font-size: 14px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 0;
+    text-align: center;
     color: hsl(28, 10%, 53%);
 }
 
@@ -146,6 +147,7 @@ main h2{
 #total-amount{
     font-size: 34px;
     font-weight: 700;
+    color: hsl(25, 47%, 15%);
 }
 
 #about-lastmonth{
@@ -176,10 +178,5 @@ main h2{
         font-size: 12px;
         text-align: center;
         margin: 10px 0 0 0;
-    }
-    #spendingPerDay{
-        width: 40px;
-        height: 24px;
-        margin: 0 0 10px -3px;
     }
 }
